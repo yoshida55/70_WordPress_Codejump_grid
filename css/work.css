@@ -1,0 +1,102 @@
+/* ヘッダー全体 */
+.header_area {
+  padding: 4rem 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: white;
+
+  z-index: 100;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.header_logo {
+  display: block;
+  width: 15rem;
+  height: auto;
+}
+
+/* ハンバーガーボタン */
+.hamburger_menu {
+  position: relative;
+  width: 4rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: white;
+
+  z-index: 300;
+}
+
+/* バー（3本線） */
+.bar {
+  display: block;
+  transition: 0.3s;
+  left: 0;
+  height: 0.2rem;
+  width: 4rem;
+  background: black;
+  /* 💡 追加：回転の軸を中央にする */
+  transform-origin: center;
+
+  position: absolute;
+}
+.bar:nth-child(1) {
+  top: 1rem;
+}
+.bar:nth-child(2) {
+  top: 1.8rem;
+}
+
+.hamburger_menu.open {
+  background-color: transparent;
+}
+
+/* openクラスで × に変化 */
+.hamburger_menu.open .bar:nth-child(1) {
+  transform: rotate(45deg);
+  top: 1.4rem;
+  background: white;
+}
+.hamburger_menu.open .bar:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 1.4rem;
+  background: white;
+}
+
+/* グローバルメニュー（デフォルト非表示） */
+.global_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  padding: 15rem 0 0 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none; /* デフォルト非表示 */
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  z-index: 150;
+}
+
+.global_menu.open {
+  display: flex; /* openクラスが付いたら表示 */
+}
+
+.global_menu_link {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
