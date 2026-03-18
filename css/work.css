@@ -192,3 +192,43 @@ body {
 .detail_wrapper {
   width: 50%;
 }
+
+.detail_wrapper_right {
+  max-width: 60rem;
+}
+
+.company_area {
+  max-width: 60rem;
+  padding-top: 15rem;
+}
+
+.company_area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.company_wrapper {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.6rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.company_wrapper:not(:last-child) {
+  border-bottom: 0.1rem solid grey;
+}
+
+.company_work {
+  height: 7rem;
+}
+
+.item {
+  width: 40%;
+}
+.discripsion {
+  width: 60%;
+}
