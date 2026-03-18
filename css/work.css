@@ -1,6 +1,7 @@
 body {
   max-width: 1360rem;
   width: 100%;
+
   padding: 0 4rem;
 }
 
@@ -169,4 +170,25 @@ body {
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
+}
+
+/* ┌─────────────────────────────────────────┐
+   │ メイン・商品                        │
+   └─────────────────────────────────────────┘ */
+
+.detail_area {
+  max-width: 60rem;
+  padding-top: 15rem;
+
+  display: flex;
+  gap: 4rem;
+}
+
+.detail_text {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail_wrapper {
+  width: 50%;
 }
