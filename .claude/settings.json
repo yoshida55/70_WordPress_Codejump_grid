@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude --version)",
+      "Bash(npm update:*)",
+      "Bash(npm show:*)",
+      "Read(//c/Users/sensh/AppData/Roaming/Claude/claude_code/**)",
+      "Read(//c/Users/sensh/**)",
+      "WebSearch"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\sensh\\.claude"
+    ]
+  }
+}
