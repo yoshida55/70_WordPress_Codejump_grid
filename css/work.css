@@ -1,5 +1,5 @@
 body {
-  max-width: 1360rem;
+  max-width: 136rem;
   width: 100%;
 
   padding: 0 4rem;
@@ -49,7 +49,6 @@ body {
   height: 0.2rem;
   width: 4rem;
   background: black;
-  /* 💡 追加：回転の軸を中央にする */
   transform-origin: center;
 
   position: absolute;
@@ -125,9 +124,9 @@ body {
 }
 
 .wrapper {
-  max-width: 1360px;
+  max-width: 136rem;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 4rem;
 }
 
 /* ┌─────────────────────────────────────────┐
@@ -167,7 +166,7 @@ body {
 .footer_page_number {
   display: block;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: black;
 }
@@ -193,16 +192,9 @@ body {
   width: 50%;
 }
 
-.detail_wrapper_right {
-  max-width: 60rem;
-}
-
 .company_area {
   max-width: 60rem;
   padding-top: 15rem;
-}
-
-.company_area {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -229,6 +221,6 @@ body {
 .item {
   width: 40%;
 }
-.discripsion {
+.description {
   width: 60%;
 }

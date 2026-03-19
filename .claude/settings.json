@@ -6,7 +6,10 @@
       "Bash(npm show:*)",
       "Read(//c/Users/sensh/AppData/Roaming/Claude/claude_code/**)",
       "Read(//c/Users/sensh/**)",
-      "WebSearch"
+      "WebSearch",
+      "Read(//c/Users/guest04/.claude/skills/review-css/**)",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
     ],
     "additionalDirectories": [
       "C:\\Users\\sensh\\.claude"
